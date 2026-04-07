@@ -9,7 +9,7 @@ from .models import Task
 
 
 def classify_and_update(task: Task) -> Task:
-    """Apply classifier and set task metadata for assignment readiness."""
+    """Set task metadata for assignment readiness without overwriting explicit type."""
     task.status = TaskStatus.CLASSIFIED
     task.updated_at = datetime.utcnow()
     return task
