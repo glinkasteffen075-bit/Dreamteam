@@ -1,0 +1,24 @@
+{
+  "type": "verification",
+  "status": "created",
+  "assigned_agent": "manual",
+  "spec": {
+    "title": "Verify review engine behavior",
+    "description": "Check that policy review rejects out-of-scope file edits.",
+    "acceptance_criteria": [
+      "Review decision is generated",
+      "Rejection reason is explicit"
+    ],
+    "notes": []
+  },
+  "scope": {
+    "allowed_files": [
+      "orchestrator"
+    ],
+    "forbidden_files": [
+      "secrets"
+    ],
+    "allow_behavior_change": false,
+    "allow_contract_change": false
+  }
+}
