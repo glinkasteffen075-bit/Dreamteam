@@ -4,10 +4,10 @@
   "assigned_agent": "manual",
   "spec": {
     "title": "Verify review engine behavior",
-    "description": "Check that policy review rejects out-of-scope file edits.",
+    "description": "Check that policy review accepts in-scope file edits.",
     "acceptance_criteria": [
       "Review decision is generated",
-      "Rejection reason is explicit"
+      "Approval reason is explicit"
     ],
     "notes": []
   },

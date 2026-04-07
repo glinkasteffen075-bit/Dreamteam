@@ -21,21 +21,20 @@ def review_task_result(task: Task, result: AgentResult) -> ReviewDecision:
     violations.extend(reject_unexpected_behavior_changes(task, result))
     violations.extend(reject_unexpected_contract_changes(task, result))
 
-    escalation_reason = escalation_reason_for(task, result, violations)
-
-    if escalation_reason is not None:
-        return ReviewDecision(
-            task_id=task.id,
-            decision=ReviewDecisionType.ESCALATE,
-            reasons=violations or ["Result requires human decision."],
-            escalation_reason=escalation_reason,
-        )
-
     if violations:
         return ReviewDecision(
             task_id=task.id,
             decision=ReviewDecisionType.REJECT,
             reasons=violations,
+        )
+
+    escalation_reason = escalation_reason_for(task, result, violations)
+    if escalation_reason is not None:
+        return ReviewDecision(
+            task_id=task.id,
+            decision=ReviewDecisionType.ESCALATE,
+            reasons=["Result requires human decision."],
+            escalation_reason=escalation_reason,
         )
 
     return ReviewDecision(
