@@ -1,0 +1,17 @@
+project:
+  name: Orchestrator V1
+storage:
+  tasks_file: data/tasks.json
+  reviews_file: data/reviews.json
+  escalations_file: data/escalations.json
+runtime:
+  max_retries: 1
+  default_allowed_extensions:
+    - .py
+    - .md
+    - .yaml
+    - .yml
+    - .json
+escalation:
+  auto_escalate_on_architectural_change: true
+  auto_escalate_on_unclear_result: true
