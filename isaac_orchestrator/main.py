@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, UTC
+datetime.now(UTC)
 from pathlib import Path
 
 from orchestrator.adapters.manual_agent import ManualAgentAdapter

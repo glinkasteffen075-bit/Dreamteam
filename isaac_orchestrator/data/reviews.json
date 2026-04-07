@@ -1,1 +1,43 @@
-[]
+[
+  {
+    "id": "b872cd3d-979a-4f9a-a80a-88ac2c7de507",
+    "created_at": "2026-04-07T20:29:35.552349",
+    "task_id": "40eb7deb-da82-4b69-8a1e-9f04a4edd154",
+    "decision": "approve",
+    "reasons": [
+      "Result satisfies task scope and policy."
+    ],
+    "escalation_reason": null
+  },
+  {
+    "id": "88f0ecd1-20cd-442e-8939-b885dd79f92f",
+    "created_at": "2026-04-07T20:34:21.170348",
+    "task_id": "6507ebdc-c105-42c3-850c-262c1e4144c4",
+    "decision": "reject",
+    "reasons": [
+      "File outside allowed scope: secrets/config.py",
+      "Forbidden file touched: secrets/config.py"
+    ],
+    "escalation_reason": null
+  },
+  {
+    "id": "4e0510df-e58d-49b1-af72-5b7a0f9b10d1",
+    "created_at": "2026-04-07T20:42:50.427158",
+    "task_id": "da6d103a-bcde-472b-bc76-fc04bb9981c0",
+    "decision": "escalate",
+    "reasons": [
+      "Result requires human decision."
+    ],
+    "escalation_reason": "unclear"
+  },
+  {
+    "id": "bf910495-7497-4685-b0ea-8df18f9aaa5a",
+    "created_at": "2026-04-07T20:49:01.435145",
+    "task_id": "12ac3d8a-64e7-47dc-8948-04d8edc93f77",
+    "decision": "escalate",
+    "reasons": [
+      "Result requires human decision."
+    ],
+    "escalation_reason": "unclear"
+  }
+]
