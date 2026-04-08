@@ -28,7 +28,7 @@ def review_task_result(task: Task, result: AgentResult) -> ReviewDecision:
             reasons=violations,
         )
 
-    escalation_reason = escalation_reason_for(task, result, violations)
+    escalation_reason = escalation_reason_for(task, result)
     if escalation_reason is not None:
         return ReviewDecision(
             task_id=task.id,
