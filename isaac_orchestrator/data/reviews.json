@@ -59,5 +59,25 @@
       "Result satisfies task scope and policy."
     ],
     "escalation_reason": null
+  },
+  {
+    "id": "a905cf4d-43d6-43ea-9f44-ac62f5067477",
+    "created_at": "2026-04-08T13:39:02.633069",
+    "task_id": "02de5ea5-2402-432b-aed4-4b030d58d51a",
+    "decision": "approve",
+    "reasons": [
+      "Result satisfies task scope and policy."
+    ],
+    "escalation_reason": null
+  },
+  {
+    "id": "b9ed81da-bcb9-4392-b14e-73f555e74f5a",
+    "created_at": "2026-04-08T13:44:56.496645",
+    "task_id": "2d2dc0e1-010a-41ab-a3e1-dc2a5cd932f8",
+    "decision": "approve",
+    "reasons": [
+      "Result satisfies task scope and policy."
+    ],
+    "escalation_reason": null
   }
 ]

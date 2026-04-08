@@ -238,5 +238,65 @@
       "allow_contract_change": false
     },
     "assigned_agent": "manual"
+  },
+  {
+    "id": "02de5ea5-2402-432b-aed4-4b030d58d51a",
+    "created_at": "2026-04-08T13:39:02.631048",
+    "updated_at": "2026-04-08T13:39:02.631434",
+    "type": "verification",
+    "status": "assigned",
+    "spec": {
+      "title": "Verify policy-based review flow",
+      "description": "Verify a local manual-agent result can be reviewed safely.",
+      "acceptance_criteria": [
+        "Instruction is generated",
+        "Agent result can be reviewed",
+        "Decision is persisted"
+      ],
+      "notes": []
+    },
+    "scope": {
+      "allowed_files": [
+        "orchestrator",
+        "README.md"
+      ],
+      "forbidden_files": [
+        "secrets",
+        ".env"
+      ],
+      "allow_behavior_change": false,
+      "allow_contract_change": false
+    },
+    "assigned_agent": "manual"
+  },
+  {
+    "id": "2d2dc0e1-010a-41ab-a3e1-dc2a5cd932f8",
+    "created_at": "2026-04-08T13:44:56.495273",
+    "updated_at": "2026-04-08T13:44:56.495547",
+    "type": "verification",
+    "status": "assigned",
+    "spec": {
+      "title": "Verify policy-based review flow",
+      "description": "Verify a local manual-agent result can be reviewed safely.",
+      "acceptance_criteria": [
+        "Instruction is generated",
+        "Agent result can be reviewed",
+        "Decision is persisted"
+      ],
+      "notes": []
+    },
+    "scope": {
+      "allowed_files": [
+        "orchestrator",
+        "README.md"
+      ],
+      "forbidden_files": [
+        "secrets",
+        ".env"
+      ],
+      "allow_behavior_change": false,
+      "allow_contract_change": false
+    },
+    "assigned_agent": "manual"
   }
 ]
