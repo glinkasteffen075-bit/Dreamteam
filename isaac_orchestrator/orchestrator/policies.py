@@ -47,14 +47,10 @@ def reject_unexpected_contract_changes(task: Task, result: AgentResult) -> list[
     return []
 
 
-def escalation_reason_for(task: Task, result: AgentResult, violations: list[str]) -> EscalationReason | None:
-    """Suggest escalation reason for ambiguous or high-risk outcomes."""
+def escalation_reason_for(task: Task, result: AgentResult) -> EscalationReason | None:
+    """Suggest escalation reason only when hard policy checks have already passed."""
     if task.type.value == "architectural_change":
         return EscalationReason.ARCHITECTURE
-    if any("behavior" in v.lower() for v in violations):
-        return EscalationReason.BEHAVIOR
-    if any("scope" in v.lower() or "forbidden" in v.lower() for v in violations):
-        return EscalationReason.SCOPE
     if not result.summary.strip():
         return EscalationReason.UNCLEAR
     return None
