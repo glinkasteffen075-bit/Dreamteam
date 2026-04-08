@@ -18,5 +18,15 @@
     "details": [
       "Result requires human decision."
     ]
+  },
+  {
+    "id": "df5eea86-d846-496e-b012-024eb1798330",
+    "created_at": "2026-04-07T22:33:41.072893",
+    "task_id": "d5d5bee6-8467-4d1c-96ec-1e50cb8ad228",
+    "reason": "unclear",
+    "summary": "Task 'Verify policy-based review flow' requires human review (unclear).",
+    "details": [
+      "Result requires human decision."
+    ]
   }
 ]

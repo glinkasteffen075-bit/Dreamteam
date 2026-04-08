@@ -1,0 +1,9 @@
+{
+  "task_id": "TEST-PIPELINE-1",
+  "summary": "Simulated Codex output",
+  "changed_files": ["orchestrator/review_engine.py"],
+  "behavior_changed": false,
+  "contract_changed": false,
+  "tests_run": ["python main.py"],
+  "notes": ["Pipeline test"]
+}

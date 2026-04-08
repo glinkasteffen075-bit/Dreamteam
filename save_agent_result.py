@@ -5,11 +5,12 @@ from pathlib import Path
 
 
 def main() -> None:
-    source_path = Path("data/codex_output.json")
-    target_path = Path("data/agent_result.json")
+    base = Path("isaac_orchestrator")
+    source_path = base / "data" / "codex_output.json"
+    target_path = base / "data" / "agent_result.json"
 
     if not source_path.exists():
-        raise FileNotFoundError("Missing data/codex_output.json")
+        raise FileNotFoundError(f"Missing {source_path}")
 
     raw = source_path.read_text(encoding="utf-8").strip()
     parsed = json.loads(raw)
